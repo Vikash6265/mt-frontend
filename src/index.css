@@ -359,14 +359,15 @@ form h2{
     flex-wrap: wrap;
   }
   .list-group-item span{
-    width: 37%;
+    width: 45%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .list-group-item i{
     font-size: 25px;
+    padding-top: 15px;
   }
   /* .slide{
     z-index: 1;
@@ -399,6 +400,7 @@ form h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-inline: 10px;
   }
   .slide h1{
      display: none;
@@ -409,6 +411,9 @@ form h2{
   .slide ul li{
     padding-top: 20px;
     padding-inline: 15px;
+  }
+  .slide ul li:first-child{
+    display: none;
   }
   .slide ul li a{
     color: #011a41;
