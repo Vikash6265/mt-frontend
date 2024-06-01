@@ -338,9 +338,6 @@ form h2{
     position: fixed;
     top: 0%;
   }
-  .navbar .btn{
-    margin-right: 60px;
-  }
   .card{
     width: 100%;
     height: auto;
@@ -397,7 +394,6 @@ form h2{
     transition: 0.5s ease;
     transform: translateX(-100%);
     margin-top: 50px;
-    z-index: 1;
     border-radius: 20px;
     padding-block: 0px;
     display: flex;
@@ -411,7 +407,7 @@ form h2{
     display: flex;
   }
   .slide ul li{
-    padding-top: 0px;
+    padding-top: 20px;
     padding-inline: 15px;
   }
   .slide ul li a{
@@ -424,8 +420,8 @@ form h2{
     transition: 0.2s ease-out;
   }
   .slide ul li a i{
-    font-size: 20px;
-    padding-right: 30px;
+    font-size: 21px;
+    padding-right: 10px;
   }
   .slide ul li:hover{
     background-color: #8000ff;
@@ -435,9 +431,9 @@ form h2{
     position:fixed;
     height: 30px;
     width: 35px;
-    top: 0%;
+    top: 9%;
     right: 0%;
-    margin-left: 87%;
+    left: 20px;
     margin-top: 12px;
     z-index: 1;
   }

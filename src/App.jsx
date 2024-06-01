@@ -13,7 +13,7 @@ import Profile from './pages/Profile';
 const App = () => {
   return (
     <Router>
-      <div className="container-fluid p-0">
+      <div id='padd' className="container-fluid p-0">
          
         <Navbar/>
         <Sidebar/>
