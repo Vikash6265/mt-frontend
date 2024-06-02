@@ -70,7 +70,7 @@ const authSlice = createSlice({
 
 export default authSlice.reducer;
 
-export const register = createAsyncThunk( "REGISTER/USER" ,async (formData , thunkAPI) =>{
+export const register = createAsyncThunk( "REGISTER/USER" ,async (formData ,thunkAPI) =>{
     try {
         return await authservice.registerUser(formData);
     } catch (error) {
@@ -79,7 +79,7 @@ export const register = createAsyncThunk( "REGISTER/USER" ,async (formData , thu
     }  
 });
 
-export const login = createAsyncThunk( "LOGIN/USER" ,async (formData) =>{
+export const login = createAsyncThunk( "LOGIN/USER" ,async (formData , thunkAPI) =>{
     try {
         return await authservice.loginUser(formData);
     } catch (error) {

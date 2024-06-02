@@ -35,9 +35,9 @@ const Login = () => {
       navigate('/')
     }
 
-    if(isError && message)
+    if(isError || message)
     {
-      toast.error(message);
+      toast.error(message || 'An error occurred');
     }
   },[user,message,isError])
 

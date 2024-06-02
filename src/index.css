@@ -229,7 +229,7 @@ form h2{
 }
 .archive-unarchive{
   width: 60%;
-  height: 400px;
+  max-height: 400px;
   background-color: gray;
   padding-inline: 2%;
   overflow: scroll;
@@ -341,6 +341,10 @@ form h2{
   .card{
     width: 100%;
     height: auto;
+    padding-inline: 10px;
+  }
+  .card form{
+    padding-inline: 10px;
   }
   .notebook{
     width: 100%;
@@ -369,12 +373,6 @@ form h2{
     font-size: 25px;
     padding-top: 15px;
   }
-  /* .slide{
-    z-index: 1;
-  }
-  .toggle{
-    z-index: 2;
-  } */
 
   .profile-container{
     width: 100%;
@@ -409,8 +407,9 @@ form h2{
     display: flex;
   }
   .slide ul li{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-inline: 15px;
+    margin-top: 15px;
   }
   .slide ul li:first-child{
     display: none;
@@ -441,6 +440,24 @@ form h2{
     left: 20px;
     margin-top: 12px;
     z-index: 1;
+  }
+
+  .new{
+    width: 100%;
+    padding-inline: 2%;
+  }
+  .archive-unarchive{
+    width: 100%;
+    max-height: 400px;
+    padding-inline: 2%;
+    padding-block: 20px;
+    margin-top: 100px;
+  }
+  .archive-unarchive h2{
+    padding-block: 15px;
+  }
+  .arch-list{
+    border: 1px solid white;
   }
   
 }

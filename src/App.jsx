@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer , toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Register from './pages/Register';
 import Login from './pages/Login';
@@ -13,7 +13,7 @@ import Profile from './pages/Profile';
 const App = () => {
   return (
     <Router>
-      <div id='padd' className="container-fluid p-0">
+      <div className="container-fluid p-0">
          
         <Navbar/>
         <Sidebar/>
@@ -24,9 +24,8 @@ const App = () => {
           <Route path='/Archive' element={<Arch_Unar/>}/>
           <Route path='/Profile' element={<Profile/>}/>
         </Routes>
-
+        <ToastContainer/>
       </div>
-      <ToastContainer/>
     </Router>
   )
 }

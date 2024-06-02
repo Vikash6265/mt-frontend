@@ -17,7 +17,7 @@ const Sidebar = () => {
   
   return (
     <>
-      <label>
+      <label className='label'>
         <input className='sidebar' type="checkbox" />
         <div className="toggle">
             <span className='top_line common'></span>

@@ -44,9 +44,9 @@ const Register = () => {
       navigate('/')
     }
 
-    if(isError && message)
+    if(isError || message)
     {
-        toast.error(message);
+        toast.error(message || 'Please Fill All Details Correctly !');
     }
   },[user,message,isError])
 
